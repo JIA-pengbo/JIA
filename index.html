@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>YS</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="">
+  <div class="w" style="height:80px; margin-top:5px;"> 
+  <!--logo-->
+  <div style="float:left;">
+    <div class="lg"><img src="img/logo11.jpg" width="167" height="80" /></div>
+  </div>  
+  <!--menu菜单-->
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">HOMEPAGE</a></li>
+      <li><a href="hzms.html" target="_blank">contact us</a></li>
+      <li><a href="fjms.html" target="_blank">privacy protection</a></li>
+      <li><a href="lygl.html" target="_blank">feedback</a></li>
+      <li><a href="lsyz.html" target="_blank">practice cases</a></li>
+      <li class="zh"><a href="lsrw.html" target="_blank">famous history</a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="top w"><img src="img/yinxiang001.png" id="img" /></div>
+<!--banaer图片-->
+
+  <div class="w">
+  <div class="hz">PRIVACY INTRODUCTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="zhuce.html" target="_blank"></a>
+</div>
+  <div class="lb"><img src="img/index1.jpg" /></div>
+  <div class="wz">
+    <span>   In 2021, Didi was exposed to have serious issues regarding user privacy leakage. It illegally collected a vast amount of user information, such as screenshots from mobile phone albums, clipboard and app list information, face recognition information, and more. Meanwhile, there were increased suspected incidents of improper use and leakage risks of information. For instance, users received harassing phone calls from Didi's financial department. There were also cases of account theft and large non-personal orders in different locations. Users believed that there was a risk of privacy leakage. These actions violated multiple laws and regulations. In July 2022, the Cyberspace Administration of China imposed a fine of 8.026 billion yuan on Didi Global Inc. and a fine of 1 million yuan each on Cheng Wei, chairman and CEO of Didi Global Inc., and Liu Qing.</span>
+
+  </div>
+</div>
+
+<div class="copy w">
+  <div class="main-content">
+    <h1>Welcome to jcd Technology Co., Ltd</h1>
+    <p>We are committed to providing high-quality IT solutions.</p>
+</div>
+
+<!-- 底部栏 -->
+<footer class="footer-area">
+    <div class="footer-details">
+        <div class="company-info">
+            <p>Production location: Guangzhou City</p>
+            <p>Company Phone: 18983677812</p>
+        </div>
+        <div class="footer-navigation">
+            <a href="#">About Us </a>
+            <a href="#">Service Union</a>
+            <a href="#">contact us</a>
+        </div>
+    </div>
+    <div class="footer-credits">
+        <p>&copy;©  2024 jcd Technology Co., Ltd copyright.</p>
+    </div>
+</footer>
+</div>   <!--copy-->
+</body>
+  <script>
+	var arr=new Array('img/yinxiang001.PNG','img/yinxiang002.PNG','img/yinxiang003.PNG','img/yinxiang004.PNG','img/yinxiang005.jpg');
+	var i=0;//下标
+	var t=null;
+	function change(){
+		//清除计时器
+		window.clearTimeout(t);
+		//获取图片对象
+		var img=document.getElementById('img');
+	
+		//改变图片路径
+		img.src=arr[i];
+		//下标的增加
+		i++;
+		//下标范围的控制
+		if(i>arr.length-1){
+			i=0;	
+		}
+		//设置计数器	
+		t=window.setTimeout('change()',2000);
+	}
+	change();
+</script>
+<script type="text/javascript">
+		var gd =document.getElementById('gd')
+		var gd1 = document.getElementById('gd1')
+		var gd2 = document.getElementById('gd2')
+		var time=null;
+		gd2.innerHTML=gd1.innerHTML;
+		
+		function gundong () {
+			//alert(gd.scrollLeft)
+			if (gd.scrollLeft>gd1.offsetWidth) {
+				gd.scrollLeft-=gd1.offsetWidth
+			}else{
+				gd.scrollLeft+=2;
+			};
+		}
+		
+		function start () {
+			// 清空定时器
+			window.clearInterval(time);
+			//定义定时器
+			time = window.setInterval('gundong()',30)
+		}
+		
+		function stops () {
+			// 清空定时器
+			window.clearInterval(time);
+		}
+
+		start()
+	</script> 
+    
+
+</html>
